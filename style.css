@@ -1,0 +1,188 @@
+ body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family:sans-serif;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(135, 235, 230);
+}
+
+.quiz_box{
+    width:600px;
+    max-width: 80%;
+    padding: 10px;
+    background-color:white;
+    border-radius: 5px;
+    border-color:black;
+    box-shadow: 0 0 10px 2px;   
+    
+}
+/* start button */
+#start_btn button{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 20px;
+    outline: none;  
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;   
+} 
+
+/* title & timer */
+.quiz_box header{
+    position: relative;
+    height: 70px;
+    padding: 10px;
+    color: rgb(21, 26, 25);
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-left: 10px;
+} 
+
+.quiz_box header .title {
+    font-size:20px; 
+    font-weight:bold;
+}
+
+.quiz_box header .timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    font-size: 15px;  
+} 
+
+.quiz_box header .time .timeText{
+    user-select: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 20px;
+} 
+
+.quiz_box header .time .timerSec{
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 10px;
+    user-select: none;
+} 
+
+/* questions & options */
+section {
+    padding: 25px 30px 20px 30px;
+}
+
+section #question_container {
+    width: 100%;
+    height: 5rem; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px; 
+    font-weight: 600ox;
+}  
+
+section .option_list {
+    grid-template-columns: repeat(2,auto);
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;    
+}
+
+section .option_list .option{
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 15px;   
+}
+    
+section .option_list .option:hover {
+    border-color: orange;   
+} 
+
+/* next button */
+footer .next_btn {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    outline: none;  
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale (0.95);
+    transition: all 0.3s ease; 
+}
+
+footer button.show{
+    opacity:1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+/* result box */
+.resultCard {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    display: inline;
+    justify-content: space-between;
+    opacity: 0;       
+}
+
+.resultCard .activeresult {
+    opacity: 1;
+    pointer-events: auto;
+} 
+
+.resultCard .submit_btn{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 300px;
+    outline: none;  
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;     
+}
+
+/* score */ 
+.score {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    display: inline;
+    justify-content: space-between;
+    opacity: 0;
+}
+
+.score .restart_btn {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    outline: none;  
+    border-radius: 5px;
+    color: black;
+    cursor: pointer; 
+}
+
+
+
+
+
+
+
+
+    
+
+

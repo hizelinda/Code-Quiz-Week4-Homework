@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Code Quiz</title>
+  </head>
+
+<body>
+        <!-- start Quiz Button -->
+      <div class="quiz_box">
+        <div id="start_btn"><button>start</button></div> 
+         
+        <!-- Quiz title & timer-->
+        <header>
+          <div class="title">Multiple Choice Quiz</div>
+         
+          <div class="timer">
+            <div class="timeText">Time Left:</div>
+            <div class="timerSec"></div> 
+          </div>
+        </header> 
+     
+        <!--Questions & Options  -->
+        <section>
+          <div id="question_container">  
+           
+          </div>
+
+          <div class="option_list">
+             
+          </div> 
+        </section>
+
+        <!--Footer buttons  -->
+        <footer>
+          <div class="footer_button">
+            <button class="next_btn">Next</button> 
+          </div>
+        </footer>
+      </div>  
+
+        <!--result Box -->
+        <div class="resultCard">
+          <h2>All Done!</h2>
+              <form>
+                <label for="enter_initials">Enter Your Initials:</label>
+                <input type="text" id="Enter_Initials">
+              </form>
+          <div class="submit_btn"><button>Submit</button></div>           
+        </div>
+      
+        <div class="score">
+          <h2>Highscores</h2>
+            <form>
+              <label for="display_score"></label>
+              <input type="text">
+            </form>
+
+          <div class="restart_btn"><button>Restart</button></div>
+        </div>
+  
+      <script src="script.js"></script>
+
+       
+</body>
+</html>
